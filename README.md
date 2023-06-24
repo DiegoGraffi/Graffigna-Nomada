@@ -1,11 +1,11 @@
 # Nómade
 
-1. Sobre la Empresa (#id1)
-2. Productos (#id2)
-3. Público (#id3)
-4. Tipografia (#id4)
-5. Colores (#id5)
-6. Logo (#id6)
+1. [Empresa] (#id1)
+2. [Productos] (#id2)
+3. [Público] (#id3)
+4. [Tipografia] (#id4)
+5. [Colores] (#id5)
+6. [Logo] (#id6)
 
 ## Sobre la Empresa <a name="id1"></a>
 
