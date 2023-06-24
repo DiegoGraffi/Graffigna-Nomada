@@ -1,6 +1,13 @@
 # Nómade
 
-## Sobre la Empresa
+1. Sobre la Empresa (#id1)
+2. Productos (#id2)
+3. Público (#id3)
+4. Tipografia (#id4)
+5. Colores (#id5)
+6. Logo (#id6)
+
+## Sobre la Empresa <a name="id1"></a>
 
 Somos un ecommerce especializado en la venta de productos especialmente diseñados para motociclistas apasionados, y nuestro enfoque se centra en hacer que tus viajes en motocicleta sean aún más emocionantes y memorables. En Nómade, entendemos y compartimos la pasión por la libertad y la aventura que solo se experimenta en dos ruedas.
 
@@ -10,7 +17,7 @@ Explora nuestro amplio catálogo y descubre una selección de accesorios e indum
 
 Únete a nosotros y déjanos ser tu compañero de confianza en el camino. ¡Prepárate para la aventura con Nómade!
 
-## Tipo de Productos
+## Tipo de Productos <a name="id2"></a>
 
 - Cascos.
 - Baúles.
@@ -25,18 +32,18 @@ Explora nuestro amplio catálogo y descubre una selección de accesorios e indum
 - Accesorios.
 - Repuestos.
 
-## Público Objetivo
+## Público Objetivo <a name="id3"></a>
 
 El público objetivo del e-commerce de Nómade son personas entre los 20 y 70 años.
 
-## Tipografía Principal
+## Tipografía Principal <a name="id4"></a>
 
 Prompt
 
-## Paleta de Colores
+## Paleta de Colores <a name="id5"></a>
 
 ![Colores](/Images/Colores.jpg "Colores e-commerce")
 
-## Logo Nomade
+## Logo Nomade <a name="id6"></a>
 
 ![Logo](/Images/Logo.jpg "Logo e-commerce")
