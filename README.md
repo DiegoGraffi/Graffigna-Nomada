@@ -47,3 +47,7 @@ Prompt
 ## Logo Nomade <a name="id6"></a>
 
 ![Logo](/Images/Logo.jpg "Logo e-commerce")
+
+## Archivo Figma
+
+Link del archivo [Figma](https://www.figma.com/file/HtSbxBOYfnmp8TiplD4az9/Trabajo-Pr%C3%A1ctico-N%C2%B0-2?type=design&node-id=0%3A1&mode=design&t=KKupFLbA1lswiRfc-1).
