@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Prompt", sans-serif;
+}
+
+::root {
+  --rojo: #d63c3c;
+  --azul: #3e4560;
+  --celeste: #3c7ad6;
+  --secondary: #f3f3f3;
+}
+
+.footer {
+  background-color: black;
+}
+
+.nav-footer--item {
+  color: white;
+}
+
+.copy {
+  color: white;
+}
