@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Prompt", sans-serif;
+}
+
+::root {
+  --rojo: #d63c3c;
+  --azul: #3e4560;
+  --celeste: #3c7ad6;
+  --secondary: #f3f3f3;
+}
+
+.body {
+  width: 100vw;
+}
+
+/* NAVBAR MOBILE */
+
+.navbar {
+  display: flex;
+  height: 60px;
+  width: 100vw;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.nav-items {
+  display: none;
+}
+
+.nav-buttons {
+  display: none;
+}
+
+/* HERO */
+
+.hero-banner {
+  width: 100vw;
+}
+
+.section-title {
+  color: #3e4560;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 25px;
+}
+
+.hero-text {
+  color: #3e4560;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  padding: 10px 25px;
+}
+
+.hero-buttons {
+  width: 100%;
+  padding: 75px 25px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hero-button-tag {
+  padding: 16px;
+  border: none;
+  width: 150px;
+  background-color: white;
+  font-weight: 300;
+  font-size: 16px;
+  color: #3e4560;
+}
+
+.hero-button {
+  border: 1px solid #3e4560;
+}
+
+.hero-button .variant {
+  background-color: #3e4560;
+  color: white;
+}
+
+/* NOSOTROS */
+
+.section-text {
+  padding: 30px 25px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  color: #3e4560;
+}
+
+/* CATEGORIAS */
+
+.category-bg {
+  background-color: #3e4560;
+  width: 100%;
+  height: 65%;
+  position: absolute;
+  display: flex;
+  align-self: center;
+}
+
+.categoryCard-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px auto;
+  padding: 0px 25px;
+  gap: 10px;
+  justify-content: center;
+  z-index: 50;
+}
+
+.category-card {
+  width: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 50;
+}
+
+.category-img {
+  width: 170px;
+  height: 120px;
+  object-fit: cover;
+  position: relative;
+}
+
+.category-title {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #3e4560;
+  background-color: white;
+  position: absolute;
+  padding: 10px 20px;
+  margin-top: 60px;
+}
+
+.categoryItems-container {
+  background-color: #f3f3f3;
+  width: 100%;
+  list-style: none;
+  padding: 15px;
+}
+
+.category-item {
+  font-size: 12px;
+  font-weight: 200;
+  color: #3e4560;
+  padding: 10px;
+  border-bottom: 1px solid #3e4560;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all ease-in-out 50ms;
+}
+
+.category-item:last-child {
+  border-bottom: none;
+}
+
+.category-item:active {
+  color: white;
+  background-color: #3e4560;
+}
+
+.category-arrow .category-item:active {
+  color: white;
+}
+
+/* PRODUCTOS */
+
+.products {
+  margin-top: 50px;
+  padding: 0px 25px;
+}
+
+.product-item {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  margin-top: 15px;
+}
+
+.product-item:last-child {
+  margin-bottom: 15px;
+}
+
+.product-info {
+  background-color: #f3f3f3;
+  padding: 8px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.product-info-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-name {
+  font-size: 12px;
+  font-weight: 200;
+  color: #3e4560;
+}
+
+.product-price {
+  font-size: 16px;
+  font-weight: 600;
+  color: #3e4560;
+  margin-top: 10px;
+}
+
+.product-envio {
+  display: flex;
+  gap: 5px;
+}
+
+.product-envio-text {
+  font-size: 10px;
+  font-weight: 200;
+  color: #3e4560;
+}
+
+.icons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* FOOTER */
+
+.footer {
+  padding: 30px 25px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+.logo-footer {
+  height: 25px;
+}
+
+.social-media {
+  display: flex;
+  gap: 15px;
+  margin: 0px auto;
+  height: 25px;
+}
+
+.nav-footer {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0px auto;
+}
+
+.nav-footer--item {
+  color: white;
+  padding-right: 15px;
+  border-right: 1px solid white;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.nav-footer--item:last-child {
+  padding-right: 0px;
+  border-right: none;
+}
+
+.copy {
+  color: white;
+  margin: 0px auto;
+  font-size: 10px;
+  font-weight: 200;
+}
