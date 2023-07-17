@@ -90,7 +90,7 @@
 
 .section-text {
   padding: 30px 25px;
-  text-align: center;
+  text-align: justify;
   font-size: 14px;
   font-weight: 300;
   color: #3e4560;
@@ -284,4 +284,124 @@
   margin: 0px auto;
   font-size: 10px;
   font-weight: 200;
+}
+
+/* ------ PRODUCT DETAIL PAGE ------ */
+
+.productDetail-info {
+  padding: 0px 25px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.product-detail-category {
+  font-size: 14px;
+  font-weight: 300;
+  color: #3e4560;
+  opacity: 70%;
+}
+
+.product-detail-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3e4560;
+}
+
+.product-detail-price {
+  font-size: 24px;
+  font-weight: 300;
+  color: #3e4560;
+}
+
+/* PRODUCT DETAIL PHOTOS */
+
+.products-photos {
+  padding: 0px 25px;
+}
+
+.main-photo {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.product-photos {
+  padding: 0px 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.product-mini-photo {
+  width: 64px;
+  border: 1px solid #f3f3f3;
+}
+
+/* PRODUCT DETAIL INPUTS */
+
+.product-detail-variables {
+  display: flex;
+  gap: 10px;
+  padding: 0px 25px;
+  margin-top: 25px;
+}
+
+.product-detail-inputName {
+  font-size: 14px;
+  font-weight: 600;
+  color: #3e4560;
+}
+
+.product-detail-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.product-detail-select {
+  background-color: #f3f3f3;
+  border: none;
+  padding: 11px;
+}
+
+.product-detail-option {
+  font-size: 12px;
+  font-weight: 300;
+  color: #3e4560;
+}
+
+.product-detail-buttons {
+  padding: 0px 25px;
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.product-detail-button {
+  display: flex;
+  width: 100%;
+  padding: 11px;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.product-detail-buttonText {
+  color: white;
+}
+
+.product-detail-buttons .favorito {
+  background-color: #d63c3c;
+}
+
+.product-detail-buttons .carrito {
+  background-color: #3c7ad6;
+}
+
+/* PRODUCT DETAIL DESCRIPTION */
+
+.product-detail-description {
+  margin-top: 20px;
 }

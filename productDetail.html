@@ -7,68 +7,118 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="navbar">
-      <img src="./Images/Logo.svg" alt="logo" />
-      <ul class="nav-items">
-        <li>Inicio</li>
-        <li>Nosotros</li>
-        <li>Categorias</li>
-        <li>Contacto</li>
-      </ul>
-      <div class="nav-buttons">
-        <a class="nav-button">
-          <button>Iniciar Sesion</button>
-        </a>
-        <a class="nav-button">
-          <button>Registrarse</button>
-        </a>
-      </div>
+    <header>
+      <nav class="navbar">
+        <img src="./Images/Logo.svg" alt="logo" class="nav-logo" />
+        <img src="./Images/Burger Menu.svg" class="nav-menuMobile" />
+        <ul class="nav-items">
+          <li>Inicio</li>
+          <li>Nosotros</li>
+          <li>Categorias</li>
+          <li>Contacto</li>
+        </ul>
+        <div class="nav-buttons">
+          <a class="nav-button">
+            <button>Iniciar Sesion</button>
+          </a>
+          <a class="nav-button">
+            <button>Registrarse</button>
+          </a>
+        </div>
+      </nav>
     </header>
 
     <section>
+      <div class="productDetail-info">
+        <p class="product-detail-category">cascos</p>
+        <p class="product-detail-name">
+          Casco LS2 Valiant FF399 Solid Negro Mate
+        </p>
+        <p class="product-detail-price">$ 244.999</p>
+      </div>
       <div class="product-detail-photos">
-        <div class="product-photos">
-          <img src="./Images/product01.png" alt="foto producto" />
-          <img src="./Images/product02.png" alt="foto producto" />
-          <img src="./Images/product03.png" alt="foto producto" />
-          <img src="./Images/product04.png" alt="foto producto" />
-          <img src="./Images/product05.png" alt="foto producto" />
-        </div>
         <div class="principal-photo">
           <img
             src="./Images/product-principal.png"
             alt="foto producto principal"
+            class="main-photo"
+          />
+        </div>
+        <div class="product-photos">
+          <img
+            src="./Images/product01.png"
+            alt="foto producto"
+            class="product-mini-photo"
+          />
+          <img
+            src="./Images/product02.png"
+            alt="foto producto"
+            class="product-mini-photo"
+          />
+          <img
+            src="./Images/product03.png"
+            alt="foto producto"
+            class="product-mini-photo"
+          />
+          <img
+            src="./Images/product04.png"
+            alt="foto producto"
+            class="product-mini-photo"
+          />
+          <img
+            src="./Images/product05.png"
+            alt="foto producto"
+            class="product-mini-photo"
           />
         </div>
       </div>
 
       <div class="product-detail-productInfo">
-        <div class="product-info">
-          <p class="product-detail-category">cascos</p>
-          <p class="product-detail-name">
-            Casco LS2 Valiant FF399 Solid Negro Mate
-          </p>
-          <p class="product-detail-price">$ 244.999</p>
-        </div>
         <div class="product-inputs">
           <div class="product-detail-variables">
             <div class="product-detail-input">
               <label class="product-detail-inputName">Color</label>
-              <input type="text" class="product-detail-input" />
+              <select class="product-detail-select">
+                <option value="negro-mate" class="product-detail-option">
+                  Negro Mate
+                </option>
+                <option value="negro-brillante" class="product-detail-option">
+                  Negro Brillante
+                </option>
+                <option value="gris" class="product-detail-option">Gris</option>
+                <option value="Rojo" class="product-detail-option">Rojo</option>
+              </select>
             </div>
 
             <div class="product-detail-input">
               <label class="product-detail-inputName">Talle</label>
-              <input type="text" class="product-detail-input" />
+              <select class="product-detail-select">
+                <option value="s" class="product-detail-option">S</option>
+                <option value="m" class="product-detail-option">M</option>
+                <option value="l" class="product-detail-option">L</option>
+                <option value="xl" class="product-detail-option">XL</option>
+                <option value="xxl" class="product-detail-option">XXL</option>
+              </select>
             </div>
 
             <div class="product-detail-input">
               <label class="product-detail-inputName">Cantidad</label>
-              <input type="number" class="product-detail-input" />
+              <select class="product-detail-select">
+                <option value="1" class="product-detail-option">01</option>
+                <option value="2" class="product-detail-option">02</option>
+                <option value="3" class="product-detail-option">03</option>
+                <option value="4" class="product-detail-option">04</option>
+                <option value="5" class="product-detail-option">05</option>
+                <option value="6" class="product-detail-option">06</option>
+                <option value="7" class="product-detail-option">07</option>
+                <option value="8" class="product-detail-option">08</option>
+                <option value="9" class="product-detail-option">09</option>
+                <option value="10" class="product-detail-option">10</option>
+              </select>
             </div>
           </div>
           <div class="product-detail-buttons">
-            <button class="product-detail-button">
+            <button class="product-detail-button favorito">
               <img
                 src="./Images/Vector.svg"
                 class="product-detail-buttonIcon"
@@ -76,7 +126,7 @@
               <p class="product-detail-buttonText">Anadir a Favoritos</p>
             </button>
 
-            <button class="product-detail-button">
+            <button class="product-detail-button carrito">
               <img
                 src="./Images/shoppingcart.svg"
                 class="product-detail-buttonIcon"
@@ -101,7 +151,7 @@
           exercitationem! Possimus
         </p>
 
-        <p>
+        <p class="section-text">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione,
           error numquam, eligendi sapiente sed aliquid, sint ipsam iste quidem
           esse eius dolor neque eos impedit repudiandae quis. Deleniti.
@@ -112,22 +162,20 @@
     <footer class="footer">
       <img src="./Images/logo-inv.svg" alt="logo" class="logo-footer" />
 
-      <div class="nav-footer">
-        <ul>
-          <li class="nav-footer--item">Inicio</li>
-          <li class="nav-footer--item">Nosotros</li>
-          <li class="nav-footer--item">Categorias</li>
-          <li class="nav-footer--item">Contacto</li>
-        </ul>
-      </div>
-
       <div class="social-media">
         <img src="./Images/youtube.svg" alt="youtube icon" />
         <img src="./Images/instagram.svg" alt="instagram icon" />
         <img src="./Images/facebook.svg" alt="facebook icon" />
       </div>
 
-      <p class="copy">Copyright 2023 Nomade</p>
+      <ul class="nav-footer">
+        <li class="nav-footer--item">Inicio</li>
+        <li class="nav-footer--item">Nosotros</li>
+        <li class="nav-footer--item">Categorias</li>
+        <li class="nav-footer--item">Contacto</li>
+      </ul>
+
+      <p class="copy">Copyright © 2023 Nomade</p>
     </footer>
   </body>
 </html>
