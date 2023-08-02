@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nomada</title>
-    <link rel="stylesheet" href="./globals.css" />
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
     <header>
@@ -12,64 +12,78 @@
         <img src="./Images/Logo.svg" alt="logo" class="nav-logo" />
         <img src="./Images/Burger Menu.svg" class="nav-menuMobile" />
         <ul class="nav-items">
-          <li>Inicio</li>
-          <li>Nosotros</li>
-          <li>Categorias</li>
-          <li>Contacto</li>
+          <a href="./index.html" class="nav-item">Inicio</a>
+          <a href="#nosotros" class="nav-item">Nosotros</a>
+          <a href="#categorias" class="nav-item">Categorias</a>
+          <a href="./cart.html" class="nav-item">Carrito</a>
         </ul>
         <div class="nav-buttons">
-          <a class="nav-button">
-            <button>Iniciar Sesion</button>
+          <a href="./login.html" class="nav-button">
+            <div>Iniciar Sesion</div>
           </a>
-          <a class="nav-button">
-            <button>Registrarse</button>
+          <a href="./register.html" class="nav-button">
+            <div>Registrarse</div>
           </a>
         </div>
       </nav>
     </header>
     <main>
       <div class="hero">
-        <img src="./Images/banner.png" class="hero-banner" />
-        <h1 class="section-title">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, quis?
-        </h1>
-        <p class="hero-text">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente
-          illo dolore quam possimus ut, quidem pariatur omnis repellat aperiam
-          nam
-        </p>
-        <div class="hero-buttons">
-          <a class="hero-button">
-            <button class="hero-button-tag">lorem ipsum</button>
-          </a>
-          <a class="hero-button">
-            <button class="hero-button-tag variant">lorem</button>
-          </a>
+        <div class="hero-img-container">
+          <img src="./Images/banner.png" class="hero-banner" />
+        </div>
+        <div class="hero-info-container">
+          <h1 class="hero-title">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, quis?
+          </h1>
+          <p class="hero-text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente
+            illo dolore quam possimus ut, quidem pariatur omnis repellat aperiam
+            nam
+          </p>
+          <div class="hero-buttons">
+            <a class="hero-button">
+              <button class="hero-button-tag">lorem ipsum</button>
+            </a>
+            <a class="hero-button">
+              <button class="hero-button-tag variant">lorem</button>
+            </a>
+          </div>
         </div>
       </div>
 
-      <div class="nosotros">
+      <div class="nosotros" id="nosotros">
         <h3 class="section-title">Sobre Nosotros</h3>
         <p class="section-text">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam non
-          similique voluptatem, qui omnis totam architecto accusantium beatae
-          vero facere eos perspiciatis minima quidem sequi? Possimus illum,
-          exercitationem voluptates ea nostrum fugiat officiis aspernatur labore
-          perferendis reprehenderit, eos rem dolor fugit a cumque quasi. Rerum
-          debitis nulla maxime quis modi voluptate ut beatae architecto,
-          praesentium pariatur reiciendis fuga nemo voluptates!
+          Ut quis sodales velit, ac sollicitudin dolor. Donec volutpat molestie
+          lacinia. Aliquam in mi in velit fermentum imperdiet. Cras eros turpis,
+          ornare et urna non, tincidunt imperdiet enim. Maecenas rutrum vitae
+          libero mollis rutrum. Morbi quis sem in nibh mattis imperdiet nec
+          vitae orci. Sed fermentum pharetra velit in tempor. Nam massa ex,
+          egestas a metus ac, bibendum mollis dui. Sed elementum malesuada enim,
+          ac bibendum felis imperdiet in. Vivamus at dui luctus, posuere tellus
+          vitae, laoreet ipsum. Morbi placerat leo in consequat cursus.
+          Pellentesque iaculis turpis vel sem mollis, sit amet vehicula mi
+          viverra. Cras consequat iaculis eros, mattis aliquet augue aliquet a.
+          Vivamus convallis quam a augue auctor, sit amet efficitur neque
+          porttitor.
         </p>
 
         <p class="section-text">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad beatae
-          aspernatur, voluptatibus obcaecati nesciunt quo expedita consequatur
-          laudantium corporis quos est dicta fugit. Corporis praesentium hic in
-          perspiciatis id sed fugit autem voluptas officia nam, tempora quidem
-          et? Hic, doloremque.
+          Sed sed erat dolor. Suspendisse sit amet aliquet libero, ac convallis
+          lectus. Duis lacinia luctus augue ac pharetra. Quisque et arcu in
+          tortor tempus porta id quis nulla. Proin ac dignissim lectus. Etiam
+          aliquam vulputate pharetra. Nunc sed laoreet est. Aliquam nec
+          convallis nulla. Sed vel rhoncus purus, vitae aliquet dui. Morbi
+          ultrices commodo nisl at tristique. Vestibulum ut neque eu augue
+          posuere bibendum vitae congue magna. Fusce semper elit vel bibendum
+          ultricies. Curabitur dapibus ipsum ligula, ac fermentum tellus semper
+          quis. Suspendisse pulvinar metus a suscipit euismod. Curabitur
+          pulvinar feugiat lacus, quis aliquet lorem ullamcorper et.
         </p>
       </div>
 
-      <div class="category">
+      <div class="category" id="categorias">
         <h3 class="section-title">Categorias</h3>
 
         <div class="categoryCard-container">
@@ -257,7 +271,7 @@
       </div>
 
       <div class="products">
-        <h3 class="section-title">Productos destacados</h3>
+        <h3 class="products-section-title">Productos destacados</h3>
 
         <div class="products-container">
           <div class="product-item">
@@ -268,7 +282,7 @@
             />
             <div class="product-info">
               <div class="product-info-text">
-                <div>
+                <div class="product-text">
                   <p class="product-name">
                     Campera Moto Fourstroke Warrior Wp Protecciones
                   </p>
@@ -311,7 +325,7 @@
             />
             <div class="product-info">
               <div class="product-info-text">
-                <div>
+                <div class="product-text">
                   <p class="product-name">
                     Conjunto Alpinestars Fluid Tripple Motocross Mx 999m
                   </p>
@@ -354,7 +368,7 @@
             />
             <div class="product-info">
               <div class="product-info-text">
-                <div>
+                <div class="product-text">
                   <p class="product-name">
                     Casco Moto Givi X21 Shiver Challenger
                   </p>
@@ -397,7 +411,7 @@
             />
             <div class="product-info">
               <div class="product-info-text">
-                <div>
+                <div class="product-text">
                   <p class="product-name">Bolso Moto Givi Sillin</p>
                   <p class="product-price">$ 121.777</p>
                 </div>
@@ -434,22 +448,24 @@
     </main>
 
     <footer class="footer">
-      <img src="./Images/logo-inv.svg" alt="logo" class="logo-footer" />
+      <div class="footer-info">
+        <img src="./Images/logo-inv.svg" alt="logo" class="logo-footer" />
 
-      <div class="social-media">
-        <img src="./Images/youtube.svg" alt="youtube icon" />
-        <img src="./Images/instagram.svg" alt="instagram icon" />
-        <img src="./Images/facebook.svg" alt="facebook icon" />
+        <div class="social-media">
+          <img src="./Images/youtube.svg" alt="youtube icon" />
+          <img src="./Images/instagram.svg" alt="instagram icon" />
+          <img src="./Images/facebook.svg" alt="facebook icon" />
+        </div>
+
+        <ul class="nav-footer">
+          <li class="nav-footer--item">Inicio</li>
+          <li class="nav-footer--item">Nosotros</li>
+          <li class="nav-footer--item">Categorias</li>
+          <li class="nav-footer--item">Contacto</li>
+        </ul>
+
+        <p class="copy">Copyright © 2023 Nomade</p>
       </div>
-
-      <ul class="nav-footer">
-        <li class="nav-footer--item">Inicio</li>
-        <li class="nav-footer--item">Nosotros</li>
-        <li class="nav-footer--item">Categorias</li>
-        <li class="nav-footer--item">Contacto</li>
-      </ul>
-
-      <p class="copy">Copyright © 2023 Nomade</p>
     </footer>
   </body>
 </html>

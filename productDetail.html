@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./globals.css" />
+    <link rel="stylesheet" href="./productDetail.css" />
     <title>Nomada - Producto</title>
   </head>
   <body>
@@ -12,68 +12,79 @@
         <img src="./Images/Logo.svg" alt="logo" class="nav-logo" />
         <img src="./Images/Burger Menu.svg" class="nav-menuMobile" />
         <ul class="nav-items">
-          <li>Inicio</li>
-          <li>Nosotros</li>
-          <li>Categorias</li>
-          <li>Contacto</li>
+          <a href="./index.html" class="nav-item">Inicio</a>
+          <a href="#nosotros" class="nav-item">Nosotros</a>
+          <a href="#categorias" class="nav-item">Categorias</a>
+          <a href="./cart.html" class="nav-item">Carrito</a>
         </ul>
         <div class="nav-buttons">
-          <a class="nav-button">
-            <button>Iniciar Sesion</button>
+          <a href="./login.html" class="nav-button">
+            <div>Iniciar Sesion</div>
           </a>
-          <a class="nav-button">
-            <button>Registrarse</button>
+          <a href="./register.html" class="nav-button">
+            <div>Registrarse</div>
           </a>
         </div>
       </nav>
     </header>
 
     <section>
-      <div class="productDetail-info">
-        <p class="product-detail-category">cascos</p>
-        <p class="product-detail-name">
-          Casco LS2 Valiant FF399 Solid Negro Mate
-        </p>
-        <p class="product-detail-price">$ 244.999</p>
-      </div>
-      <div class="product-detail-photos">
-        <div class="principal-photo">
-          <img
-            src="./Images/product-principal.png"
-            alt="foto producto principal"
-            class="main-photo"
-          />
+      <div class="">
+        <div class="productDetail-info">
+          <p class="product-detail-category">cascos</p>
+          <p class="product-detail-name">
+            Casco LS2 Valiant FF399 Solid Negro Mate
+          </p>
+          <p class="product-detail-price">$ 244.999</p>
         </div>
-        <div class="product-photos">
-          <img
-            src="./Images/product01.png"
-            alt="foto producto"
-            class="product-mini-photo"
-          />
-          <img
-            src="./Images/product02.png"
-            alt="foto producto"
-            class="product-mini-photo"
-          />
-          <img
-            src="./Images/product03.png"
-            alt="foto producto"
-            class="product-mini-photo"
-          />
-          <img
-            src="./Images/product04.png"
-            alt="foto producto"
-            class="product-mini-photo"
-          />
-          <img
-            src="./Images/product05.png"
-            alt="foto producto"
-            class="product-mini-photo"
-          />
+        <div class="product-detail-photos">
+          <div class="principal-photo">
+            <div class="img-container">
+              <img
+                src="./Images/product-principal-edit.png"
+                alt="foto producto principal"
+                class="main-photo"
+              />
+            </div>
+          </div>
+          <div class="product-photos">
+            <img
+              src="./Images/product01.png"
+              alt="foto producto"
+              class="product-mini-photo"
+            />
+            <img
+              src="./Images/product02.png"
+              alt="foto producto"
+              class="product-mini-photo"
+            />
+            <img
+              src="./Images/product03.png"
+              alt="foto producto"
+              class="product-mini-photo"
+            />
+            <img
+              src="./Images/product04.png"
+              alt="foto producto"
+              class="product-mini-photo"
+            />
+            <img
+              src="./Images/product05.png"
+              alt="foto producto"
+              class="product-mini-photo"
+            />
+          </div>
         </div>
       </div>
 
       <div class="product-detail-productInfo">
+        <div class="productDetail-infoDesktop">
+          <p class="product-detail-category">cascos</p>
+          <p class="product-detail-name">
+            Casco LS2 Valiant FF399 Solid Negro Mate
+          </p>
+          <p class="product-detail-price">$ 244.999</p>
+        </div>
         <div class="product-inputs">
           <div class="product-detail-variables">
             <div class="product-detail-input">
@@ -156,22 +167,24 @@
     </section>
 
     <footer class="footer">
-      <img src="./Images/logo-inv.svg" alt="logo" class="logo-footer" />
+      <div class="footer-info">
+        <img src="./Images/logo-inv.svg" alt="logo" class="logo-footer" />
 
-      <div class="social-media">
-        <img src="./Images/youtube.svg" alt="youtube icon" />
-        <img src="./Images/instagram.svg" alt="instagram icon" />
-        <img src="./Images/facebook.svg" alt="facebook icon" />
+        <div class="social-media">
+          <img src="./Images/youtube.svg" alt="youtube icon" />
+          <img src="./Images/instagram.svg" alt="instagram icon" />
+          <img src="./Images/facebook.svg" alt="facebook icon" />
+        </div>
+
+        <ul class="nav-footer">
+          <li class="nav-footer--item">Inicio</li>
+          <li class="nav-footer--item">Nosotros</li>
+          <li class="nav-footer--item">Categorias</li>
+          <li class="nav-footer--item">Contacto</li>
+        </ul>
+
+        <p class="copy">Copyright © 2023 Nomade</p>
       </div>
-
-      <ul class="nav-footer">
-        <li class="nav-footer--item">Inicio</li>
-        <li class="nav-footer--item">Nosotros</li>
-        <li class="nav-footer--item">Categorias</li>
-        <li class="nav-footer--item">Contacto</li>
-      </ul>
-
-      <p class="copy">Copyright © 2023 Nomade</p>
     </footer>
   </body>
 </html>
