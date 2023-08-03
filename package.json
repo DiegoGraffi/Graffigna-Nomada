@@ -1,0 +1,16 @@
+{
+  "name": "graffigna-nomada",
+  "version": "1.0.0",
+  "description": "1. [Empresa](#id1)\r 2. [Productos](#id2)\r 3. [Público](#id3)\r 4. [Tipografia](#id4)\r 5. [Colores](#id5)\r 6. [Logo](#id6)",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
