@@ -42,11 +42,11 @@ Prompt
 
 ## Paleta de Colores <a name="id5"></a>
 
-![Colores](/Images/Colores.jpg "Colores e-commerce")
+![Colores](/Public/Images/Colores.jpg "Colores e-commerce")
 
 ## Logo Nomade <a name="id6"></a>
 
-![Logo](/Images/Logo.jpg "Logo e-commerce")
+![Logo](/Public/Images/Logo.jpg "Logo e-commerce")
 
 ## Archivo Figma
 
