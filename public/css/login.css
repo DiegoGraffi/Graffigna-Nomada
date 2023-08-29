@@ -7,7 +7,7 @@
   font-family: "Prompt", sans-serif;
 }
 
-::root {
+:root {
   --rojo: #d63c3c;
   --azul: #3e4560;
   --celeste: #3c7ad6;
@@ -23,25 +23,7 @@
 
 a {
   text-decoration: none;
-  color: #3e4560;
-}
-
-/* NAVBAR MOBILE */
-
-.navbar {
-  display: flex;
-  height: 60px;
-  width: 100vw;
-  padding: 20px 25px;
-  justify-content: space-between;
-}
-
-.nav-items {
-  display: none;
-}
-
-.nav-buttons {
-  display: none;
+  color: var(--azul);
 }
 
 /* REGISTER */
@@ -83,7 +65,7 @@ a {
 .login-title {
   font-size: 24px;
   font-weight: bold;
-  color: #3e4560;
+  color: var(--azul);
   text-transform: uppercase;
 }
 
@@ -97,12 +79,12 @@ a {
 .login-label {
   font-size: 14px;
   font-weight: 400;
-  color: #3e4560;
+  color: var(--azul);
 }
 
 .login-input {
   height: 40px;
-  background-color: #f3f3f3;
+  background-color: var(--primary);
   border: none;
   padding: 10px;
   color: #818381;
@@ -117,7 +99,7 @@ a {
   border: none;
   width: 100%;
   height: 40px;
-  background-color: #3c7ad6;
+  background-color: var(--celeste);
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
@@ -125,7 +107,7 @@ a {
 }
 
 .recoverPassword {
-  color: #3c7ad6;
+  color: var(--celeste);
   font-size: 14px;
   font-weight: 300;
   display: flex;
@@ -134,123 +116,7 @@ a {
   cursor: pointer;
 }
 
-/* FOOTER */
-
-.footer {
-  background-color: black;
-}
-
-.footer-desktop {
-  display: none;
-}
-
-.footer-info {
-  padding: 30px 25px;
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 30px;
-}
-
-.logo-footer {
-  height: 25px;
-}
-
-.social-media {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin: 0px auto;
-  height: 25px;
-}
-
-.nav-footer {
-  list-style: none;
-  display: flex;
-  gap: 15px;
-  margin: 0px auto;
-}
-
-.nav-footer--item {
-  color: white;
-  padding-right: 15px;
-  border-right: 1px solid white;
-  font-size: 12px;
-  font-weight: 400;
-}
-
-.nav-footer--item:last-child {
-  padding-right: 0px;
-  border-right: none;
-}
-
-.copy {
-  color: white;
-  margin: 0px auto;
-  font-size: 10px;
-  font-weight: 200;
-}
-
 @media (min-width: 768px) {
-  /* NAVBAR TABLET */
-
-  .navbar {
-    height: 100px;
-    align-items: center;
-  }
-
-  .nav-items {
-    display: flex;
-    list-style: none;
-    font-size: 14px;
-    font-weight: 300;
-    gap: 20px;
-  }
-
-  .nav-item {
-    cursor: pointer;
-    border-bottom: 1px solid transparent;
-    transition: all ease-in-out 150ms;
-  }
-
-  .nav-item:hover {
-    border-bottom: 1px solid black;
-  }
-
-  .nav-buttons {
-    display: flex;
-    height: 45px;
-    gap: 10px;
-  }
-
-  .nav-button {
-    border: 1px solid #3e4560;
-    height: 100%;
-    background-color: white;
-    color: #3e4560;
-    padding: 10px;
-    font-size: 14px;
-    font-weight: 300;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all ease-in-out 150ms;
-  }
-
-  .nav-button:hover {
-    background-color: #3e4560;
-    color: white;
-  }
-
-  .nav-menuMobile {
-    display: none;
-  }
-
-  .nav-logo {
-    width: 100px;
-  }
-
   /* LOGIN */
 
   .login-container {
@@ -264,7 +130,7 @@ a {
   }
 
   .content {
-    background-color: #f3f3f3;
+    background-color: var(--primary);
   }
 
   .image-container-desktop {
@@ -297,72 +163,5 @@ a {
 
   .input-container {
     width: 100%;
-  }
-
-  /* FOOTER */
-
-  .icons-container {
-    flex-direction: row;
-    margin-top: 20px;
-    padding: 5px;
-    justify-content: space-between;
-  }
-}
-
-@media (min-width: 1200px) {
-  /* NAVBAR DESKTOP */
-
-  .navbar {
-    max-width: 1340px;
-    margin: 0 auto;
-  }
-
-  .nav-items {
-    gap: 60px;
-  }
-
-  /* FOOTER */
-
-  .footer-desktop {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .nav-footer-desktop {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-    margin: 0px auto;
-  }
-
-  .footer-info {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    justify-content: space-between;
-    height: 200px;
-    max-width: 1340px;
-    margin: 0px auto;
-    padding: 0px 50px;
-  }
-
-  .nav-footer {
-    display: none;
-  }
-
-  .nav-footer--item {
-    font-size: 14px;
-  }
-
-  .copy {
-    display: none;
-  }
-
-  .copy-desktop {
-    font-size: 14px;
-    color: white;
   }
 }

@@ -7,7 +7,7 @@
   font-family: "Prompt", sans-serif;
 }
 
-::root {
+:root {
   --rojo: #d63c3c;
   --azul: #3e4560;
   --celeste: #3c7ad6;
@@ -22,25 +22,7 @@
 
 a {
   text-decoration: none;
-  color: #3e4560;
-}
-
-/* NAVBAR MOBILE */
-
-.navbar {
-  display: flex;
-  height: 60px;
-  width: 100vw;
-  padding: 20px 25px;
-  justify-content: space-between;
-}
-
-.nav-items {
-  display: none;
-}
-
-.nav-buttons {
-  display: none;
+  color: var(--azul);
 }
 
 /* HERO */
@@ -50,7 +32,7 @@ a {
 }
 
 .section-title {
-  color: #3e4560;
+  color: var(--azul);
   text-transform: uppercase;
   font-size: 24px;
   font-weight: bold;
@@ -59,7 +41,7 @@ a {
 }
 
 .hero-title {
-  color: #3e4560;
+  color: var(--azul);
   text-transform: uppercase;
   font-size: 24px;
   font-weight: bold;
@@ -68,7 +50,7 @@ a {
 }
 
 .hero-text {
-  color: #3e4560;
+  color: var(--azul);
   font-size: 14px;
   font-weight: 300;
   text-align: center;
@@ -90,15 +72,15 @@ a {
   background-color: white;
   font-weight: 300;
   font-size: 16px;
-  color: #3e4560;
+  color: var(--azul);
 }
 
 .hero-button {
-  border: 1px solid #3e4560;
+  border: 1px solid var(--azul);
 }
 
 .hero-button .variant {
-  background-color: #3e4560;
+  background-color: var(--azul);
   color: white;
 }
 
@@ -109,13 +91,13 @@ a {
   text-align: justify;
   font-size: 14px;
   font-weight: 300;
-  color: #3e4560;
+  color: var(--azul);
 }
 
 /* CATEGORIAS */
 
 .category-bg {
-  background-color: #3e4560;
+  background-color: var(--azul);
   width: 100%;
   height: 65%;
   position: absolute;
@@ -152,7 +134,7 @@ a {
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
-  color: #3e4560;
+  color: var(--azul);
   background-color: white;
   position: absolute;
   padding: 10px 20px;
@@ -160,7 +142,7 @@ a {
 }
 
 .categoryItems-container {
-  background-color: #f3f3f3;
+  background-color: var(--primary);
   width: 100%;
   list-style: none;
   padding: 15px;
@@ -169,9 +151,9 @@ a {
 .category-item {
   font-size: 12px;
   font-weight: 200;
-  color: #3e4560;
+  color: var(--azul);
   padding: 10px;
-  border-bottom: 1px solid #3e4560;
+  border-bottom: 1px solid var(--azul);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -184,7 +166,7 @@ a {
 
 .category-item:active {
   color: white;
-  background-color: #3e4560;
+  background-color: var(--azul);
 }
 
 .category-arrow .category-item:active {
@@ -199,7 +181,7 @@ a {
 }
 
 .products-section-title {
-  color: #3e4560;
+  color: var(--azul);
   text-transform: uppercase;
   font-size: 24px;
   font-weight: bold;
@@ -219,7 +201,7 @@ a {
 }
 
 .product-info {
-  background-color: #f3f3f3;
+  background-color: var(--primary);
   padding: 8px;
   display: flex;
   width: 100%;
@@ -235,13 +217,13 @@ a {
 .product-name {
   font-size: 12px;
   font-weight: 200;
-  color: #3e4560;
+  color: var(--azul);
 }
 
 .product-price {
   font-size: 16px;
   font-weight: 600;
-  color: #3e4560;
+  color: var(--azul);
   margin-top: 10px;
 }
 
@@ -253,7 +235,7 @@ a {
 .product-envio-text {
   font-size: 10px;
   font-weight: 200;
-  color: #3e4560;
+  color: var(--azul);
 }
 
 .icons-container {
@@ -262,123 +244,7 @@ a {
   justify-content: space-around;
 }
 
-/* FOOTER */
-
-.footer {
-  background-color: black;
-}
-
-.footer-desktop {
-  display: none;
-}
-
-.footer-info {
-  padding: 30px 25px;
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 30px;
-}
-
-.logo-footer {
-  height: 25px;
-}
-
-.social-media {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin: 0px auto;
-  height: 25px;
-}
-
-.nav-footer {
-  list-style: none;
-  display: flex;
-  gap: 15px;
-  margin: 0px auto;
-}
-
-.nav-footer--item {
-  color: white;
-  padding-right: 15px;
-  border-right: 1px solid white;
-  font-size: 12px;
-  font-weight: 400;
-}
-
-.nav-footer--item:last-child {
-  padding-right: 0px;
-  border-right: none;
-}
-
-.copy {
-  color: white;
-  margin: 0px auto;
-  font-size: 10px;
-  font-weight: 200;
-}
-
 @media (min-width: 768px) {
-  /* NAVBAR TABLET */
-
-  .navbar {
-    height: 100px;
-    align-items: center;
-  }
-
-  .nav-items {
-    display: flex;
-    list-style: none;
-    font-size: 14px;
-    font-weight: 300;
-    gap: 20px;
-  }
-
-  .nav-item {
-    cursor: pointer;
-    border-bottom: 1px solid transparent;
-    transition: all ease-in-out 150ms;
-  }
-
-  .nav-item:hover {
-    border-bottom: 1px solid black;
-  }
-
-  .nav-buttons {
-    display: flex;
-    height: 45px;
-    gap: 10px;
-  }
-
-  .nav-button {
-    border: 1px solid #3e4560;
-    height: 100%;
-    background-color: white;
-    color: #3e4560;
-    padding: 10px;
-    font-size: 14px;
-    font-weight: 300;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all ease-in-out 150ms;
-  }
-
-  .nav-button:hover {
-    background-color: #3e4560;
-    color: white;
-  }
-
-  .nav-menuMobile {
-    display: none;
-  }
-
-  .nav-logo {
-    width: 100px;
-  }
-
   /* HERO */
 
   .hero-banner {
@@ -490,17 +356,6 @@ a {
 }
 
 @media (min-width: 1200px) {
-  /* NAVBAR DESKTOP */
-
-  .navbar {
-    max-width: 1340px;
-    margin: 0 auto;
-  }
-
-  .nav-items {
-    gap: 60px;
-  }
-
   /* HERO */
 
   .hero {
@@ -524,7 +379,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #f3f3f3;
+    background-color: var(--primary);
   }
 
   .hero-title {
@@ -601,50 +456,5 @@ a {
   .products-container {
     padding: 0px 0px;
     margin-bottom: 30px;
-  }
-
-  /* FOOTER */
-
-  .footer-desktop {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .nav-footer-desktop {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-    margin: 0px auto;
-  }
-
-  .footer-info {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    justify-content: space-between;
-    height: 200px;
-    max-width: 1340px;
-    margin: 0px auto;
-    padding: 0px 50px;
-  }
-
-  .nav-footer {
-    display: none;
-  }
-
-  .nav-footer--item {
-    font-size: 14px;
-  }
-
-  .copy {
-    display: none;
-  }
-
-  .copy-desktop {
-    font-size: 14px;
-    color: white;
   }
 }

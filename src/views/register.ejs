@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/register.css" />
+  </head>
+  <body>
+    <header><%- include('./partials/header.ejs') %></header>
+    <div class="content">
+      <div class="img-container">
+        <img src="./Images/banner.png" class="background-img" />
+      </div>
+
+      <div class="section-container">
+        <section class="register-container">
+          <h3 class="register-title">Registrarse</h3>
+          <form class="register-form">
+            <div class="inputs-container">
+              <div class="input-container">
+                <label for="name" class="register-label">Nombre</label>
+                <input
+                  id="name"
+                  class="register-input"
+                  type="text"
+                  required
+                  placeholder="Ingrese su nombre"
+                />
+              </div>
+
+              <div class="input-container">
+                <label for="lastName" class="register-label">Apellido</label>
+                <input
+                  id="lastName"
+                  class="register-input"
+                  type="text"
+                  required
+                  placeholder="Ingrese su apellido"
+                />
+              </div>
+            </div>
+
+            <div class="inputs-container">
+              <div class="input-container">
+                <label for="email" class="register-label">Email</label>
+                <input
+                  id="email"
+                  class="register-input"
+                  type="email"
+                  required
+                  placeholder="Ingrese su email"
+                />
+              </div>
+
+              <div class="input-container">
+                <label for="date" class="register-label"
+                  >Fecha de Nacimiento</label
+                >
+                <input id="date" class="register-input" type="date" required />
+              </div>
+            </div>
+
+            <div class="inputs-container">
+              <div class="input-container">
+                <label for="password" class="register-label">Contraseña</label>
+                <input
+                  id="password"
+                  class="register-input"
+                  type="password"
+                  required
+                  placeholder="Ingrese su contraseña"
+                />
+              </div>
+
+              <div class="input-container">
+                <label for="repeatPassword" class="register-label"
+                  >Repetir Contraseña</label
+                >
+                <input
+                  id="repeatPassword"
+                  class="register-input"
+                  type="password"
+                  required
+                  placeholder="Ingrese nuevamente su contraseña"
+                />
+              </div>
+            </div>
+
+            <button class="register-button" type="submit">Registrarse</button>
+          </form>
+        </section>
+        <div class="image-container-desktop">
+          <img src="./Images/banner.png" class="background-img-desktop" />
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer"><%- include('./partials/footer.ejs') %></footer>
+  </body>
+</html>

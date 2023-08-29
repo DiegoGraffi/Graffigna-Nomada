@@ -7,22 +7,25 @@ app.listen(PORT, () => console.log("listening on port ", PORT));
 
 app.use(express.static("public"));
 
+app.set("views", path.resolve(__dirname, "./views"));
+app.set("view engine", "ejs");
+
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "views/index.html"));
+  res.render("./index");
 });
 
 app.get("/productDetail", (req, res) => {
-  res.sendFile(path.join(__dirname, "views/productDetail.html"));
+  res.render("./productDetail");
 });
 
 app.get("/cart", (req, res) => {
-  res.sendFile(path.join(__dirname, "views/cart.html"));
+  res.render("./cart");
 });
 
 app.get("/register", (req, res) => {
-  res.sendFile(path.join(__dirname, "views/register.html"));
+  res.render("./register");
 });
 
 app.get("/login", (req, res) => {
-  res.sendFile(path.join(__dirname, "views/login.html"));
+  res.render("./login");
 });
