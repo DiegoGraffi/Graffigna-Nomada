@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Diego",
+    "lastName": "Graffigna",
+    "email": "diegograffigna1@gmail.com",
+    "date": "2023-09-15",
+    "passwordHash": "$2b$12$PUdYsuNFso9gqLjQNv1RW.xoDjqxbFl36WfpJi58znuDrwZY3Kf3S"
+  },
+  {
+    "name": "Enrique",
+    "lastName": "Graffigna",
+    "email": "enrique@gmail.com",
+    "date": "2023-09-17",
+    "passwordHash": "$2b$12$ScndxmCbSAiItcNAOET5IudPELqw2ssy6mRAoTJCQ53S9E96qXXX2"
+  },
+  {
+    "name": "Jonatan",
+    "lastName": "Rodriguez",
+    "email": "jonatan@gmail.com",
+    "date": "2023-09-16",
+    "passwordHash": "$2b$12$NRLTx9eWzTZoBI8n8/hovuVky.eCtZpN/aMGKLUq8zmu3ktq0oAbO"
+  },
+  {
+    "name": "Manuel",
+    "lastName": "Romero",
+    "email": "manuromero@gmail.com",
+    "date": "2023-09-23",
+    "passwordHash": "$2b$12$uOeLpdE07DNwJpQWxmxf3O3fpQLqQj/11BmHetTXwNfq0.COTLpJq"
+  },
+  {
+    "name": "Lorenzo",
+    "lastName": "Palmes",
+    "email": "lpalmes@gmail.com",
+    "date": "2023-09-15",
+    "passwordHash": "$2b$12$nTZ0L5ALXWN47j.RjvvHje8VMtEHQrrQ/9fCPCfJPM8biXR.rDEEa"
+  }
+]

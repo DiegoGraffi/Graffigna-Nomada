@@ -7,12 +7,9 @@
   font-family: "Prompt", sans-serif;
 }
 
-:root {
-  --rojo: #d63c3c;
-  --azul: #3e4560;
-  --celeste: #3c7ad6;
-  --primary: #f3f3f3;
-  --secondary: #d9d9d9;
+::selection {
+  background-color: var(--azul);
+  color: white;
 }
 
 .body {
@@ -40,7 +37,7 @@ a {
   background-color: black;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   gap: 30px;
 }
 
@@ -51,9 +48,41 @@ a {
 .social-media {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 15px;
   margin: 0px auto;
+  height: 100%;
+  width: 100%;
+}
+
+.footer-icon {
   height: 25px;
+  transition: all ease-in-out 150ms;
+  cursor: pointer;
+}
+
+.footer-icon.youtube:hover {
+  background-color: #ff0000;
+  border-radius: 3px;
+  padding: 3px;
+  justify-self: center;
+  align-self: center;
+}
+
+.footer-icon.facebook:hover {
+  background-color: #4267b2;
+  border-radius: 3px;
+  padding: 3px;
+  justify-self: center;
+  align-self: center;
+}
+
+.footer-icon.instagram:hover {
+  background-color: #833ab4;
+  border-radius: 3px;
+  padding: 3px;
+  justify-self: center;
+  align-self: center;
 }
 
 .nav-footer {
@@ -83,7 +112,7 @@ a {
   font-weight: 200;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   /* FOOTER */
 
   .footer-desktop {
@@ -106,7 +135,7 @@ a {
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     justify-content: space-between;
-    height: 200px;
+    height: 150px;
     max-width: 1340px;
     margin: 0px auto;
     padding: 0px 50px;
@@ -117,7 +146,8 @@ a {
   }
 
   .nav-footer--item {
-    font-size: 14px;
+    font-size: 12px;
+    font-weight: 200;
   }
 
   .copy {
@@ -125,7 +155,11 @@ a {
   }
 
   .copy-desktop {
-    font-size: 14px;
+    font-size: 12px;
     color: white;
+  }
+
+  .social-media {
+    justify-content: end;
   }
 }

@@ -16,7 +16,7 @@
       <div class="section-container">
         <section class="login-container">
           <h3 class="login-title">Iniciar Sesión</h3>
-          <form class="login-form">
+          <form class="login-form" action="/login" method="POST">
             <div class="input-container">
               <label for="email" class="login-label">Email</label>
               <input
@@ -25,6 +25,7 @@
                 type="email"
                 required
                 placeholder="Ingrese su email"
+                name="email"
               />
             </div>
 
@@ -36,6 +37,7 @@
                 type="password"
                 placeholder="Ingrese su contraseña"
                 required
+                name="password"
               />
             </div>
 

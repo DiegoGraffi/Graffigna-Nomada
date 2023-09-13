@@ -16,16 +16,18 @@
       <div class="section-container">
         <section class="register-container">
           <h3 class="register-title">Registrarse</h3>
-          <form class="register-form">
+          <form class="register-form" action="/register" method="POST">
             <div class="inputs-container">
               <div class="input-container">
                 <label for="name" class="register-label">Nombre</label>
                 <input
                   id="name"
+                  name="name"
                   class="register-input"
                   type="text"
                   required
                   placeholder="Ingrese su nombre"
+                  value="<% if(typeof valores != 'undefined') { %><%= valores.name %><%}%>"
                 />
               </div>
 
@@ -33,10 +35,12 @@
                 <label for="lastName" class="register-label">Apellido</label>
                 <input
                   id="lastName"
+                  name="lastName"
                   class="register-input"
                   type="text"
                   required
                   placeholder="Ingrese su apellido"
+                  value="<% if(typeof valores != 'undefined') { %><%= valores.lastName %><%}%>"
                 />
               </div>
             </div>
@@ -46,10 +50,12 @@
                 <label for="email" class="register-label">Email</label>
                 <input
                   id="email"
+                  name="email"
                   class="register-input"
                   type="email"
                   required
                   placeholder="Ingrese su email"
+                  value="<% if(typeof valores != 'undefined') { %><%= valores.email %><%}%>"
                 />
               </div>
 
@@ -57,7 +63,14 @@
                 <label for="date" class="register-label"
                   >Fecha de Nacimiento</label
                 >
-                <input id="date" class="register-input" type="date" required />
+                <input
+                  id="date"
+                  name="date"
+                  class="register-input"
+                  type="date"
+                  required
+                  value="<% if(typeof valores != 'undefined') { %><%= valores.date %><%}%>"
+                />
               </div>
             </div>
 
@@ -66,10 +79,12 @@
                 <label for="password" class="register-label">Contraseña</label>
                 <input
                   id="password"
+                  name="password"
                   class="register-input"
                   type="password"
                   required
                   placeholder="Ingrese su contraseña"
+                  value="<% if(typeof valores != 'undefined') { %><%= valores.password %><%}%>"
                 />
               </div>
 
@@ -79,16 +94,25 @@
                 >
                 <input
                   id="repeatPassword"
+                  name="repeatPassword"
                   class="register-input"
                   type="password"
                   required
                   placeholder="Ingrese nuevamente su contraseña"
+                  value="<% if(typeof valores != 'undefined') { %><%= valores.repeatPassword %><%}%>"
                 />
               </div>
             </div>
 
             <button class="register-button" type="submit">Registrarse</button>
           </form>
+
+          <% if(typeof validaciones != 'undefined') { %> <%
+          validaciones.forEach( (validacion) => { %>
+          <div class="validacion-container">
+            <p class="validacion-message"><%= validacion.msg %></p>
+          </div>
+          <% })%> <% } %>
         </section>
         <div class="image-container-desktop">
           <img src="./Images/banner.png" class="background-img-desktop" />

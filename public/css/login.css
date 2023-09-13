@@ -15,6 +15,11 @@
   --secondary: #d9d9d9;
 }
 
+::selection {
+  background-color: var(--azul);
+  color: white;
+}
+
 .body {
   width: 100vw;
   overflow: hidden;

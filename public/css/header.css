@@ -15,6 +15,11 @@
   --secondary: #d9d9d9;
 }
 
+::selection {
+  background-color: var(--azul);
+  color: white;
+}
+
 .body {
   width: 100vw;
   overflow: hidden;
@@ -30,9 +35,14 @@ a {
 .navbar {
   display: flex;
   height: 60px;
-  width: 100vw;
+  width: auto;
   padding: 20px 25px;
   justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  width: 4rem;
 }
 
 .nav-items {
@@ -47,7 +57,7 @@ a {
   /* NAVBAR TABLET */
 
   .navbar {
-    height: 100px;
+    height: 80px;
     align-items: center;
   }
 

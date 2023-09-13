@@ -15,9 +15,15 @@
   --secondary: #d9d9d9;
 }
 
+::selection {
+  background-color: var(--azul);
+  color: white;
+}
+
 .body {
-  width: 100vw;
-  overflow: hidden;
+  width: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 a {
@@ -27,8 +33,35 @@ a {
 
 /* HERO */
 
+.hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-img-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -50;
+}
+
+.hero-img-cover {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 60%;
+  position: absolute;
+}
+
 .hero-banner {
-  width: 100vw;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .section-title {
@@ -41,7 +74,7 @@ a {
 }
 
 .hero-title {
-  color: var(--azul);
+  color: white;
   text-transform: uppercase;
   font-size: 24px;
   font-weight: bold;
@@ -50,7 +83,7 @@ a {
 }
 
 .hero-text {
-  color: var(--azul);
+  color: white;
   font-size: 14px;
   font-weight: 300;
   text-align: center;
@@ -67,24 +100,21 @@ a {
 
 .hero-button-tag {
   padding: 16px;
-  border: none;
   width: 150px;
   background-color: white;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 14px;
   color: var(--azul);
-}
-
-.hero-button {
-  border: 1px solid var(--azul);
-}
-
-.hero-button .variant {
-  background-color: var(--azul);
-  color: white;
+  border: none;
 }
 
 /* NOSOTROS */
+
+.nosotros {
+  width: auto;
+  overflow-x: hidden;
+  margin-top: 30px;
+}
 
 .section-text {
   padding: 30px 25px;
@@ -248,7 +278,7 @@ a {
   /* HERO */
 
   .hero-banner {
-    height: 500px;
+    height: 100%;
     object-fit: cover;
   }
 
@@ -265,15 +295,19 @@ a {
   }
 
   .hero-text {
-    font-size: 16px;
+    font-size: 14px;
     padding: 20px 50px;
   }
 
   /* NOSOTROS */
 
+  .nosotros {
+    margin-top: 10px;
+  }
+
   .section-text {
     padding: 20px 50px;
-    font-size: 16px;
+    font-size: 14px;
   }
 
   /* CATEGORIAS */
@@ -359,8 +393,6 @@ a {
   /* HERO */
 
   .hero {
-    display: flex;
-    flex-direction: row-reverse;
     overflow: hidden;
     height: 100vh;
   }
@@ -371,7 +403,7 @@ a {
   }
 
   .hero-img-container {
-    width: 50%;
+    width: 100%;
   }
 
   .hero-info-container {
@@ -379,7 +411,6 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: var(--primary);
   }
 
   .hero-title {

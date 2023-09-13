@@ -11,8 +11,13 @@
   --rojo: #d63c3c;
   --azul: #3e4560;
   --celeste: #3c7ad6;
-  --secondary: #f3f3f3;
-  --tertiary: #d9d9d9;
+  --primary: #f3f3f3;
+  --secondary: #d9d9d9;
+}
+
+::selection {
+  background-color: var(--azul);
+  color: white;
 }
 
 .body {
@@ -95,13 +100,14 @@ a {
 
 .product-mini-photo {
   width: 64px;
-  border: 1px solid var(--secondary);
-  transition: all ease-in-out 200ms;
+  border: 1px solid var(--primary);
+  transition: all ease-in-out 150ms;
   cursor: pointer;
 }
 
 .product-mini-photo:hover {
   border: 2px solid var(--azul);
+  scale: 1.2;
 }
 
 /* PRODUCT DETAIL INPUTS */
@@ -126,7 +132,7 @@ a {
 }
 
 .product-detail-select {
-  background-color: var(--secondary);
+  background-color: var(--primary);
   border: none;
   padding: 11px;
 }
